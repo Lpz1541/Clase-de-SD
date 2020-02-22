@@ -14,7 +14,8 @@ public class Connection {
   protected ServerSocket ss;
   protected Socket s;
   
-  protected DataOutputStream outputStream, outpClient;
+  protected DataOutputStream outputServer, outputClient;
+  protected String message;
 
     public Connection(String type) throws IOException {
         if(type.equalsIgnoreCase("server")){
