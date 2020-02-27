@@ -15,8 +15,14 @@ public class Client extends Connection {
 public void OnCliente (){
     try {
         outputServer = new DataOutputStream(s.getOutputStream());
-        outputServer.writeUTF("This is message the server a client");
+       System.out.println("Client> sending data to server ");
+        for (int i = 0; i < 2; i++) {
+        outputServer.writeUTF("Este es el mensaje del cliente Juan diego numero "+(i+1)+"\n");
+        }
+          System.out.println("Client> Data sent... ");
+         
         s.close();
+         System.out.println("Client> Stop... ");
     } catch (Exception e) {
         System.out.println(e.getMessage());
     
