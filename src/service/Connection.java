@@ -1,14 +1,14 @@
 
 package service;
 
-import java.io.DataOutput;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Connection {
-  private final int PORT= 8090;
+  private final int PORT= 4000;
   private final String HOST = "localhost";
   
   protected ServerSocket ss;
@@ -25,10 +25,6 @@ public class Connection {
         else{
             s = new Socket (HOST, PORT);
         }
-            
-    
-  
-  
 }
 }
 

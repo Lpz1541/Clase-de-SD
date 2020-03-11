@@ -5,6 +5,7 @@
  */
 package service;
 
+
 import java.io.IOException;
 
 /**
@@ -12,11 +13,14 @@ import java.io.IOException;
  * @author Juan Diego
  */
 public class MainClient {
-    public static void main(String[] args) throws IOException{
-        Client client=new Client ();   
-        client.OnCliente();
-        
-    }
+   
+	public static void main(String[] args) throws IOException,ClassNotFoundException{
+            for (int i =0; i<10; i++){
+                
+		Client cliente=new Client();   
+                cliente.OnCliente("client new"+ i);
+            }
+}
 
  
 }
